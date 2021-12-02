@@ -1,0 +1,19 @@
+.container{
+    background-color: darkgrey;
+    flex: 1;
+    display: flex;
+}
+
+.left{
+    background-color: darkorange;
+}
+
+.center{
+    background-color: deepskyblue;
+    flex: 1;
+    text-align: center;
+}
+
+.right{
+    background-color: gainsboro;
+}
