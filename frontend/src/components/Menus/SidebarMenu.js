@@ -37,15 +37,7 @@ export default function SidebarMenu() {
 
     let mainMenuItems = menuItemsList.map( ({name, link }, index) => 
         <li key={index}>
-            <NavLink 
-                to={link}
-                style={({ isActive }) => {
-                    return {
-                      color: isActive ? "red" : ""
-                    };
-                  }}                
-            >
-
+            <NavLink to={link} className={({ isActive }) => isActive ? SidebarMenuStyles.active : ""}>
                 {name}
             </NavLink>
         </li>
