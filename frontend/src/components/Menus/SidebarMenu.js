@@ -1,6 +1,6 @@
 import SidebarMenuStyles from "./SidebarMenu.module.css"
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function SidebarMenu() {
 
@@ -37,7 +37,17 @@ export default function SidebarMenu() {
 
     let mainMenuItems = menuItemsList.map( ({name, link }, index) => 
         <li key={index}>
-            <Link to={link}>{name}</Link>
+            <NavLink 
+                to={link}
+                style={({ isActive }) => {
+                    return {
+                      color: isActive ? "red" : ""
+                    };
+                  }}                
+            >
+
+                {name}
+            </NavLink>
         </li>
     )
 

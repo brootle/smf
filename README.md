@@ -5,3 +5,5 @@ $ npx create-react-app my-app
 $ npm start
 
 3. App started at http://localhost:3000/
+
+4. Routing https://reactrouter.com/docs/en/v6/getting-started/tutorial

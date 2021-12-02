@@ -24,6 +24,14 @@ ReactDOM.render(
           <Route path="expose" element={<Expose />} />
           <Route path="date" element={<Date />} />
           <Route path="success" element={<Success />} />
+          <Route
+            path="*"
+            element={
+              <div style={{ padding: "10px" }}>
+                <p>Page Not Found</p>
+              </div>
+            }
+          />          
         </Route>
       </Routes>
     </BrowserRouter>,
