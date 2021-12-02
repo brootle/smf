@@ -1,7 +1,7 @@
 export default function Education() {
     return (
-      <main style={{ padding: "1rem 0" }}>
-        <h2>Education</h2>
-      </main>
+      <div style={{ margin: "5px", flex: "1", backgroundColor: 'red' }}>
+        <h2>Education Page</h2>
+      </div>
     );
   }

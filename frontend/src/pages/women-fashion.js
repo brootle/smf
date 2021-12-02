@@ -1,7 +1,7 @@
 export default function WomenFashion() {
     return (
-      <main style={{ padding: "1rem 0" }}>
-        <h2>WomenFashion</h2>
-      </main>
+      <div style={{ margin: "5px", flex: "1", backgroundColor: 'green' }}>
+        <h2>Women Fashion Page</h2>
+      </div>
     );
   }
